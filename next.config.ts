@@ -1,10 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export',  // Enables static exports
-  basePath: process.env.NODE_ENV === 'production' ? '/my-nextjs-typescript-app' : '',
+  output: 'export',
+  basePath: process.env.NODE_ENV === 'production' ? '/Portafolio_FISW' : '', // Use your repo name
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/Portafolio_FISW/' : '',
   images: {
-    unoptimized: true, // For GitHub Pages compatibility
+    unoptimized: true,
   },
 };
 
