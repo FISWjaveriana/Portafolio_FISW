@@ -35,7 +35,7 @@ jobs:
         run: npm run typecheck || npm run tsc || echo "No typecheck script found, skipping"
         
       - name: Build with Next.js
-        run: NODE_ENV=production npm run build
+        run: npm run build
 
       - name: Add .nojekyll file
         run: touch ./out/.nojekyll
