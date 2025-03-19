@@ -14,7 +14,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Adding base tag to help with path resolution */}
         <base href={process.env.NODE_ENV === 'production' ? '/Portafolio_FISW/' : '/'} />
       </head>
       <body>
